@@ -8,6 +8,7 @@ import Start from './components/Start';
 
 const App = () => {
   return (
+    // This is router
     <Router>
       <>
         <div className='container'>
