@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p{font-family: 'Roboto', sans-serif;}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* Azim CSS */
+.loginPg{position: fixed;left: 0;right: 0;top: 0;bottom: 0;}
+.loginPg:before{content: ''; position: absolute;left: 0;right: 0;top: 0;bottom: 0; z-index: 1; opacity: 0.3;background: url(assets/double-bubble-outline.png);}
+.loginDv{max-width:700px; display: flex;align-items: stretch; overflow: hidden; z-index: 100; position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); margin: auto; box-shadow: 0px 0px 70px #0000001c; border-radius: 10px;border: 1px solid #eee;}
+.loginDv > figure{width:300px;margin: 0;}
+.loginDv > figure img{width:100%; height: 100%; object-fit: cover;}
+.loginDv > form{flex-grow: 1; padding: 25px; background: #f7f7f7;}
+.loginDv h1{font-size: 32px; font-weight: 300; margin:0px 0px 0px; text-align: right;}
+.loginDv p{color: #888; font-size: 12px;text-align: right;}
+.loginDv .input-group{margin-bottom: 10px; flex-direction: column;}
+.loginDv .input-group label{margin: 0px 0px -12px;font-size: 11px;font-weight: 300;text-transform: uppercase;color: #999;}
+.loginDv .input-group .form-control{background: none; border-radius: 0; border: none; border-bottom: 1px solid #999; color: #444; font-weight: 300; font-size: 20px; padding: 10px 0px; width: 100%; box-shadow: none;}
+.loginDv .input-group .form-control[disabled]{color: #ccc;border-bottom-color: #eee;}
+.loginDv .input-group .form-control:focus{box-shadow: none; border: none; border-bottom: 1px solid #378fea;}
+.loginDv .btnDV{text-align: right; padding-top: 10px}
+.loginDv .btnDV button{background: #378fea; border: 1px solid #378fea; font-size: 20px; font-weight: 300;}
+
+.loginPg .errorDv{position: absolute; left: 0; right: 0; bottom: 0; background: #f00; z-index: 5;}
+.loginPg .errorDv p{text-align: center; margin: 0px; color:#fff; padding: 8px 0px;font-size: 12px;font-weight: 300;}
+
+
+/* .attendanceDv{position: relative; padding-right: 30%;} */
+
+.companyListDv{padding: 20px 0 40px;}
+.companyListDv h2{font-size: 22px; font-weight: 300; margin:0px 0px 0px; text-align: center;}
+.companyListing{display: flex; flex-wrap: wrap;}
+.companyListing .companyItem{border: 1px solid #eee; margin: 10px; text-align: center; padding: 0px; cursor: pointer; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 200px; width: 200px;}
+.companyListing .companyItem > span{font-size: 25px; color: #999;}
+.companyListing .companyItem > h3{font-size: 20px; font-weight: 600;text-transform: capitalize; color: #666;}
+
+.cameraInfoDv{
+	/* position: absolute; right: 0; top: 50%;  */
+	width: 50%; 
+	margin: 0 auto;
+	/* transform: translateY(-50%); */
+}
+.cameraInfoDv video{width: 100%; height: auto;box-shadow: 0px 0px 40px #00000026;border-radius: 5px; transform: rotateY(180deg); -webkit-transform:rotateY(180deg); -moz-transform:rotateY(180deg);}
+.cameraInfoDv .infoDv .spinnerDv{}
+.cameraInfoDv .infoDv{}
+.cameraInfoDv .infoDv h4{
+	font-size: 20px; text-align: center; font-weight: 300; padding:5px 0; 
+	/* position: absolute; left: 0; right: 0; top: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
