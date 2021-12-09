@@ -1,5 +1,6 @@
+import React from 'react';
 import axios from 'axios';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { DEVICE_LOADING, ERROR, REGISTER_DEVICE } from '../../redux/types';
 import Button from '../LoadingButton';

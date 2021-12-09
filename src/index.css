@@ -54,8 +54,8 @@ code {
 	/* transform: translateY(-50%); */
 }
 .cameraInfoDv video{width: 100%; height: auto;box-shadow: 0px 0px 40px #00000026;border-radius: 5px; transform: rotateY(180deg); -webkit-transform:rotateY(180deg); -moz-transform:rotateY(180deg);}
-.cameraInfoDv .infoDv .spinnerDv{}
-.cameraInfoDv .infoDv{}
+/* .cameraInfoDv .infoDv .spinnerDv{} */
+/* .cameraInfoDv .infoDv{} */
 .cameraInfoDv .infoDv h4{
 	font-size: 20px; text-align: center; font-weight: 300; padding:5px 0; 
 	/* position: absolute; left: 0; right: 0; top: 100%; */
