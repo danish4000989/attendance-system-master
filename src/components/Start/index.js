@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { DEVICE_INFO, ERROR, REGISTER_DEVICE } from '../../redux/types';
-axios.defaults.baseURL = 'https://192.168.88.254:5010';
+axios.defaults.baseURL = 'https://192.168.88.254:5000';
 const Start = ({ location: { search = '' } = {}, history: { push } = {} }) => {
   const urlParams = useRef(new URLSearchParams(search));
   const dispatch = useDispatch();
@@ -35,7 +35,8 @@ const Start = ({ location: { search = '' } = {}, history: { push } = {} }) => {
       });
     }
     check(macAddress).then((val) => {
-      if (val > 0) {
+      console.log("VAL ->",val)
+      if (val.device_id > 0) {
         push('attendance');
       } else {
         push('login');

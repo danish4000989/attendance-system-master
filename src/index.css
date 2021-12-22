@@ -61,8 +61,21 @@ code {
 	/* position: absolute; left: 0; right: 0; top: 100%; */
 }
 
+.timerRun{padding: 20px 0px; position: relative;}
+.timerRun:after{
+  content: ''; position: absolute; left: 0; bottom: 0; height:5px; background: #7066e0;
+  animation: timer-run 1 5s linear;
+}
 
 
+@keyframes timer-run {
+  from {
+    width:100%;
+  }
+  to {
+    width:0%;
+  }
+}
 
 
 

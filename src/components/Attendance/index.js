@@ -45,6 +45,7 @@ const Attendance = () => {
   const dispatch = useDispatch();
 
   const insertAttendance = async (att_data) => {
+    // console.log("response ->", data)
     const res = await axios.post('/mark_attendance', att_data);
     // returnedData = res.data;
     // console.log("This is returned data: ", res.data?.id) 
@@ -81,7 +82,8 @@ const Attendance = () => {
             Swal.fire({
               // title: 'Please Confirm',
               text: `${res.data?.employee_detail?.name} | id: ${res.data.id}`,
-              timer: 5000, 
+              timer: 5000,
+              html: `<div class="timerRun">${res.data?.employee_detail?.name} | id: ${res.data.id}</div>`, 
               // icon: 'question',
               confirmButtonColor: true,
               // confirmButtonColor: '#3085d6',
@@ -95,6 +97,7 @@ const Attendance = () => {
                   id: employeeData.id,
                   companyname: employeeData.companyname,
                   device_id: employeeData.device_id,
+                  branch_id: employeeData.branch_id,
                   status: employeeData.status,
                 }
                 // console.log("Sending data to mark_attendance: ", att_data)
@@ -140,10 +143,11 @@ const Attendance = () => {
         const data = new FormData();
         data.append('image', file);
         data.append('companyname', name);
-        data.append('device_id', deviceId);
+        data.append('device_id', deviceId.device_id);
+        data.append('branch_id', deviceId.br_id);
         data.append('status', status);
         markAttendance(data);
-      }, 2000);
+      }, 200);
     },
     [webcamRef]
   );

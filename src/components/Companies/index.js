@@ -23,7 +23,7 @@ const ListCompanies = ({ capture }) => {
     try {
       dispatch({ type: LOADING_COMPANY, payload: true });
       const res = await axios.post("/get_company_list_against_id", {
-        Device_id: deviceId,
+        Device_id: deviceId.device_id,
       });
       if (res.data === -1) {
         dispatch({ type: ERROR, payload: res.data });
